@@ -21,21 +21,16 @@ This project explores drug combination data and applies machine learning techniq
 
 ## 📊 Dataset
 
-The dataset contains information related to **drug combinations and their synergy measurements**.
-
+The dataset contains information related to drug combinations and their synergy measurements.
 Depending on the dataset, features may include:
 
 * Drug 1
 * Drug 2
 * Cell line / cancer cell information
-* Drug concentrations
-* Molecular or biological features
 * Synergy score
-* Other experimental measurements
+* Other experimental measurements [gene expressions]
 
 The **synergy score** is used as the target/output for evaluating the effectiveness of a drug combination.
-
-> **Note:** Dataset files are not included in this repository if they are subject to licensing or distribution restrictions.
 
 ---
 
@@ -72,19 +67,21 @@ Model Evaluation
 ## 🛠️ Technologies Used
 
 * **Python**
-* **Google Colab / Jupyter Notebook**
 * **Pandas** – Data manipulation
 * **NumPy** – Numerical operations
 * **Matplotlib** – Data visualization
 * **Seaborn** – Statistical visualization
 * **Scikit-learn** – Machine learning
-
+* **XGBoost** – Gradient boosting algorithm for prediction
+* **SynergyX** – Drug synergy analysis and prediction
+* **LASSO Regression** – Feature selection and regularized regression
+* **AdaBoost** – Ensemble learning and prediction
+* **Random Forest** – Ensemble-based classification/regression
 ---
 
 ## 🤖 Machine Learning
 
 The project uses machine learning techniques to learn relationships between drug-related features and synergy scores.
-
 The general process includes:
 
 1. Preparing the dataset.
@@ -110,27 +107,6 @@ For regression models, a **higher R² score** generally indicates that the model
 
 ---
 
-## 📓 Notebook
-
-The main implementation is available in the Jupyter/Google Colab notebook:
-
-```text
-Drug_Synergy_Prediction.ipynb
-```
-
-The notebook contains the complete workflow, including:
-
-* Data loading
-* Exploratory Data Analysis
-* Data preprocessing
-* Feature preparation
-* Model training
-* Prediction
-* Model evaluation
-* Visualization
-
----
-
 ## 📁 Project Structure
 
 ```text
@@ -150,47 +126,6 @@ Drug-Synergy-Prediction/
 
 ---
 
-## 🔍 Key Features
-
-### Data Preprocessing
-
-* Handling missing values
-* Removing unnecessary columns
-* Encoding categorical variables
-* Preparing numerical features
-* Splitting data into training and testing sets
-
-### Exploratory Data Analysis
-
-* Distribution analysis
-* Correlation analysis
-* Feature relationships
-* Visualization of synergy scores
-
-### Machine Learning
-
-* Model training
-* Prediction
-* Performance evaluation
-* Comparison of actual and predicted values
-
----
-
-## 🚀 Future Improvements
-
-Future versions of this project can include:
-
-* Testing multiple machine learning algorithms.
-* Hyperparameter tuning.
-* Feature selection and feature engineering.
-* Using advanced ensemble models.
-* Incorporating gene-expression information.
-* Incorporating molecular drug features.
-* Using deep learning models.
-* Developing a web-based interface for synergy prediction.
-* Predicting promising drug combinations for further experimental investigation.
-
----
 
 ## ⚠️ Disclaimer
 
@@ -199,18 +134,6 @@ This project is developed for **educational and research purposes**. Machine lea
 Predicted drug synergy requires appropriate experimental validation before any real-world medical application.
 
 ---
-
-## 👩‍💻 Author
-
-**Aishwarya**
-
-### Project
-
-**Drug Synergy Prediction Using Machine Learning**
-
----
-
-## ⭐ Acknowledgements
 
 This project uses publicly available datasets and open-source Python libraries for data analysis, visualization, and machine learning.
 
